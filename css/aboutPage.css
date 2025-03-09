@@ -1,0 +1,37 @@
+.about {
+    text-align: center;
+    padding: 50px;
+}
+.about > p{
+    text-align: left;
+}
+.about-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.about-info img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.details {
+    text-align: left;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: slategray;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: slategray;
+}

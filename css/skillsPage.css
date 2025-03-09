@@ -1,0 +1,57 @@
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+h3{
+    color: deepskyblue;
+}
+.skill-category {
+    width: 300px;
+
+}
+.skill-category > p{
+    text-align: left;
+}
+.progress {
+    background: #333;
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 8px;
+    border-radius: 4px;
+    background: deepskyblue;
+    width: 0;
+    transition: 1s ease-in-out;
+}
+
+.html { 
+    width: 95%; 
+}
+.css { 
+    width: 70%; 
+}
+.js { 
+    width: 60%; 
+}
+.jquery { 
+    width: 85%; 
+}
+.php { 
+    width: 40%; 
+}
+.figma { 
+    width: 80%; 
+}
+.design { 
+    width: 90%; 
+}
