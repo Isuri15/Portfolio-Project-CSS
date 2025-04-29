@@ -24,3 +24,52 @@
 .resume-box p {
     font-size: 14px;
 }
+
+@media (max-width: 320px) {
+    .resume-box {
+        width: 90%;
+    }
+
+    .resume-box h3 {
+        font-size: 16px;
+    }
+
+    .resume-box p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .resume-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 425px) {
+    .resume-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .resume-box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .resume-box {
+        width: 30%;
+    }
+}
