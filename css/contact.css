@@ -30,37 +30,51 @@
 
 .contact-form {
     width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00bfff;
+
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: none;
     background: #333;
     color: white;
-}
+    box-shadow: 0 0 10px #00bfff;
 
+}
+.contact-form textarea{
+    height: 150px;
+}
 .btn {
     padding: 10px 15px;
     background: slategray;
     border: none;
     color: white;
+    box-shadow: 0 0 10px #00bfff;
     cursor: pointer;
     width: 100%;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 .btn:hover {
-    background: slategray;
+    background: rgb(43, 106, 168);
+    
 }
 
 .contact-info > .social-icons{
     width: 30px;
     height: 30px;
     color: white;
-    flex-direction:row;
+    /* flex-direction:row; */
+}
+
+.social-icons > a{
+    flex-direction: row;
 }

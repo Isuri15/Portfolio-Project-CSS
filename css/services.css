@@ -9,6 +9,8 @@
     background:lightskyblue;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 0 10px #00bfff;
+
 }
 
 .service-box h3 {
@@ -19,6 +21,8 @@
 
 .service-box p {
     font-size: 14px;
+    box-shadow: 0 0 10px #00bfff;
+
 }
 
 .btn {
@@ -28,7 +32,7 @@
     color: white;
     cursor: pointer;
     margin-top: 10px;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 .btn:hover {
@@ -38,12 +42,12 @@
 .service-box .btn{
     background-color:slategray;
     border: 1px solid white;
-    color: black;
+    color: white;
 
 }
 
 .service-box .btn:hover{
-    background-color:blue;
+    background-color:rgb(0, 119, 255);
     color: black;
     cursor:pointer;
     transition: brackground-color 3s ease-in-out 1s;

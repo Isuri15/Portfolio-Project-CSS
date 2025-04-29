@@ -20,6 +20,8 @@
     border-radius: 8px;
     width: 300px;
     text-align: center;
+    box-shadow: 0 0 10px #00bfff;
+
 }
 
 .project-box img {
