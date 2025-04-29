@@ -114,6 +114,20 @@ footer {
     display: none;
 }
 
+.about-info .btn{
+    background-color:deepskyblue;
+    border: 1px solid black;
+    color: black;
+
+}
+
+.about-info .btn:hover{
+    background-color:navy;
+    color: white;
+    cursor:pointer;
+    transition: brackground-color 3s ease-in-out 1s;
+
+}
 @media screen and (max-width: 768px) {
     .burger {
         display: flex;

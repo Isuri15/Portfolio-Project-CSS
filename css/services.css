@@ -34,3 +34,18 @@
 .btn:hover {
     background: slategray;
 }
+
+.service-box .btn{
+    background-color:slategray;
+    border: 1px solid white;
+    color: black;
+
+}
+
+.service-box .btn:hover{
+    background-color:blue;
+    color: black;
+    cursor:pointer;
+    transition: brackground-color 3s ease-in-out 1s;
+
+}
