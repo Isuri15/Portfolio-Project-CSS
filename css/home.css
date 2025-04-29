@@ -59,3 +59,137 @@
     /* align-items: center;
     justify-content: center; */
 }
+
+@media (max-width: 320px) {
+    .hero {
+        padding: 30px;
+        gap: 50px;
+    }
+
+    .hero-text {
+        margin: 20px 0;
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 150px;
+        height: 150px;
+        margin: 20px 0;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* 375px (phones) */
+@media (max-width: 375px) {
+    .hero {
+        padding: 30px;
+        gap: 60px;
+    }
+
+    .hero-text {
+        margin: 30px 0;
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 180px;
+        height: 180px;
+        margin: 30px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* 425px (large phones) */
+@media (max-width: 425px) {
+    .hero {
+        padding: 40px;
+        gap: 70px;
+    }
+
+    .hero-text {
+        margin: 30px 0;
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+        margin: 30px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* 768px (tablets) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .hero-text {
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+}
+
+/* 1024px (small laptops) */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px;
+    }
+
+    .hero-text {
+        margin: 20px;
+    }
+
+    .hero-image img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+}
+
+/* 1440px (large desktops) */
+@media (max-width: 1440px) {
+    .hero {
+        padding: 100px;
+    }
+
+    .hero-text {
+        margin: 40px;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 255px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
