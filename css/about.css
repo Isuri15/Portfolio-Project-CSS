@@ -35,3 +35,87 @@
 .btn:hover {
     background: slategray;
 }
+
+@media (max-width: 320px) {
+    .about-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-info img {
+        width: 150px;
+    }
+
+    .details {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-info {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .about-info img {
+        width: 160px;
+    }
+
+    .details {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .about-info {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-info img {
+        width: 180px;
+    }
+
+    .details {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 40px;
+    }
+
+    .about-info {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .about-info img {
+        width: 180px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about {
+        padding: 50px;
+    }
+
+    .about-info {
+        gap: 30px;
+    }
+
+    .about-info img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .about-info {
+        gap: 40px;
+    }
+
+    .about-info img {
+        width: 220px;
+    }
+}
