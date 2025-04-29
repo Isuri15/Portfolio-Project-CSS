@@ -78,3 +78,73 @@
 .social-icons > a{
     flex-direction: row;
 }
+
+@media (max-width: 320px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 375px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 425px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact-container {
+        gap: 20px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .contact-container {
+        gap: 30px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 400px;
+    }
+}
