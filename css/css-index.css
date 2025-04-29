@@ -125,6 +125,16 @@ footer {
     background: white;
 }
 
+.close-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
 #menu-toggle {
     display: none;
 }
@@ -143,6 +153,94 @@ footer {
     transition: brackground-color 3s ease-in-out 1s;
 
 }
+
+@media screen and (max-width: 320px) {
+    .logo {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .logo {
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    .nav-links {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 25px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .logo {
+        font-size: 22px;
+        padding: 40px;
+    }
+
+    .nav-links {
+        font-size: 16px;
+    }
+
+    footer {
+        padding: 25px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .burger {
+        display: flex;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .burger {
         display: flex;
@@ -171,9 +269,18 @@ footer {
         align-items: center;
     }
 
+    footer {
+        padding: 30px;
+    }
+
     .footer-container {
         flex-direction: column;
         text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
@@ -211,6 +318,30 @@ footer {
 
     .details {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 40px;
     }
 }
 
