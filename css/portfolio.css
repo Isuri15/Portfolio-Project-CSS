@@ -35,3 +35,61 @@
     margin: 10px 0;
     color: deepskyblue;
 }
+
+@media (max-width: 320px) {
+    .portfolio-header {
+        font-size: 18px;
+    }
+
+    .project-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .portfolio-header {
+        font-size: 20px;
+    }
+
+    .project-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .portfolio-header {
+        font-size: 22px;
+    }
+
+    .project-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .project-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .project-box {
+        width: 30%;
+    }
+}
