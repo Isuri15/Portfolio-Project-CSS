@@ -53,3 +53,51 @@
     transition: brackground-color 3s ease-in-out 1s;
 
 }
+
+@media (max-width: 320px) {
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-box h3 {
+        font-size: 16px;
+    }
+
+    .service-box p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 425px) {
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-box {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1440px) {
+    .service-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

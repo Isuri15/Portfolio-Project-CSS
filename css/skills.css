@@ -56,3 +56,81 @@ h3{
 .design { 
     width: 90%; 
 }
+
+@media (max-width: 320px) {
+    .skill-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skill-category {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 24px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .skill-container {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 26px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .skill-container {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-category {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .skill-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .skill-category {
+        width: 45%;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .skill-container {
+        gap: 40px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+}
