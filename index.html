@@ -13,18 +13,31 @@
     <link rel="stylesheet" href="/css/services.css">
     <link rel="stylesheet" href="/css/portfolio.css">
     <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/assignment.css">
 </head>
 <body>
    
     <header>
         <nav class="navbar">
             <div class="logo">Portfolio</div>
-            <label for="menu-toggle" class="burger">
+            <label for="menu-toggle" id="burger">
                 <div></div>
                 <div></div>
                 <div></div>
             </label>
-            <input type="checkbox" id="menu-toggle">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            </nav>
+            <!-- <input type="checkbox" id="menu-toggle">
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -33,32 +46,63 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-            </ul>
+            </ul> -->
+            <div class="menu-panel" id="menu-panel-id">
+                <label for="menu-toggle" class="close-btn">&times;</label>
+                <ul class="nav-links">
+                    <li><label for="menu-toggle"><a href="#hero">Home</a></label></li>
+    <li><label for="menu-toggle"><a href="#about">About</a></label></li>
+    <li><label for="menu-toggle"><a href="#skills">Skills</a></label></li>
+    <li><label for="menu-toggle"><a href="#resume">Resume</a></label></li>
+    <li><label for="menu-toggle"><a href="#services">Services</a></label></li>
+    <li><label for="menu-toggle"><a href="#projects">Projects</a></label></li>
+    <li><label for="menu-toggle"><a href="#contact">Contact</a></label></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    
+    <script>
+        const burger = document.getElementById("burger");
+        const menuPanel = document.getElementById("menu-panel-id");
+        const closeBtn = document.getElementById("btn-close");
+  
+        burger.addEventListener("click", () => {
+          menuPanel.classList.add("active");
+        });
+  
+        closeBtn.addEventListener("click", () => {
+          menuPanel.classList.remove("active");
+        });
+    </script>
+
     <section id="hero">
         <div class="hero-text">
-            <h2>Hello It's Me</h2>
-            <h1><strong>Isuri Gamage</strong></h1>
-            <h3>And I'm a Web Designer</h3>
-            <div class="social-icons">
-                <a href="#" target="_blank">
-                    <img src="/asset/icons/icons8-facebook-50.png" alt="facebook-icon" /></a>
-                <a href="#" target="_blank">
-                    <img src="/asset/icons/icons8-github-logo-60.png" alt="github-icon" /></a>
-                <a href="#" target="_blank">
-                    <img src="/asset/icons/icons8-linkedin-50.png" alt="linkedin-icon" /></a>
-                <a href="#" target="_blank">
-                    <img src="/asset/icons/icons8-instagram-logo-50.png" alt="instagram-icon"/></a>
-            </div>
-            <div class="hero-image">
-                <img src="/asset/images/my pic .jpeg" alt="Profile Picture">
+            <div id="hero-txet"> 
+                <div>
+                    <h2>Hello It's Me</h2>
+                    <h1><strong>Isuri Gamage</strong></h1>
+                    <h3 class="typewriter">And I'm a Web Designer</h3>
+                    <div class="social-icons">
+                        <a href="#" target="_blank">
+                            <img src="/asset/icons/icons8-facebook-50.png" alt="facebook-icon" /></a>
+                        <a href="#" target="_blank">
+                            <img src="/asset/icons/icons8-github-logo-60.png" alt="github-icon" /></a>
+                        <a href="#" target="_blank">
+                            <img src="/asset/icons/icons8-linkedin-50.png" alt="linkedin-icon" /></a>
+                        <a href="#" target="_blank">
+                            <img src="/asset/icons/icons8-instagram-logo-50.png" alt="instagram-icon"/></a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="/asset/images/my pic .jpeg" alt="Profile Picture">
+                </div>
             </div>
         </div>
         
     </section>
-    
+
+    <!-- About -->
     <section id="about">
         <h2>About Me</h2>
         <p>I am a passionate UI/UX Designer and Web Developer skilled in crafting dynamic, user-friendly websites and intuitive digital experiences. 
@@ -79,6 +123,7 @@
         </div>
     </section>
 
+    <!-- Skills -->
     <section id="skills">
         <h2>Skills</h2>
         <div class="skill-container">
@@ -106,7 +151,8 @@
             </div>
         </div>
     </section>
-        
+    
+    <!-- Resume -->
     <section id="resume">
         <h2>Resume</h2>
         <div class="resume-container">
@@ -119,10 +165,25 @@
             <div class="resume-box">
                 <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
                 <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="resume-box">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="resume-box">
+                <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
+                <p></p>
+                <p></p>
+                <p></p>
             </div>
         </div>
     </section>
         
+    <!-- Services -->
     <section id="services">
         <h2>Services</h2>
         <div class="service-container">
@@ -150,6 +211,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Project -->
     <header class="portfolio-header">
         <h2>Portfolio</h2>
     </header>
@@ -178,8 +241,70 @@
                 <p>A comprehensive system for managing animal farm operations and livestock tracking.</p>
             </div>
         </div>
+
+
+        <!-- Assignment -->
+        <h2>Assignment</h2>
+
+        <div class="assignment-acontainer">
+            <div class="assignment">
+                <a href="https://github.com/Isuri15/portfolio-project.git?authuser=0">Git Assignment 1</a>
+                <a href="https://project-portfolio-be92e.web.app/?authuser=0">Assignment 01</a>
+            </div>            
+
+            <div class="assignment">
+                <a href="https://github.com/Isuri15/IT---Assignment-03?authuser=0">Git Assignment 2</a>
+                <a href="https://assignment-03-dc8fe.web.app/?authuser=0">Assignment 02</a>
+            </div>   
+
+            <div class="assignment">
+                <a href="https://github.com/Isuri15/IT---Assignment---04-?authuser=0">Git Assignment 3</a>
+                <a href="https://assignment-4-4554c.web.app/?authuser=0">Assignment 03</a>
+            </div>   
+
+            <div class="assignment">
+                <a href="https://github.com/Isuri15/portfolio-project.git?authuser=0">Git Assignment 4</a>
+                <a href="https://project-portfolio-be92e.web.app/?authuser=0">Assignment 04</a>
+            </div>   
+
+            <div class="assignment">
+                <a href="https://github.com/Isuri15/IT-Assignment-06?authuser=0">Git Assignment 5</a>
+                <a href="https://assignment-06-7c906.web.app/?authuser=0">Assignment 05</a>
+            </div>   
+
+            <div class="assignment">
+                <a href="https://github.com/Isuri15/IT-Assignment-07?authuser=0">Git Assignment 6</a>
+                <a href="https://it-assignment-07-2acfd.web.app/?authuser=0">Assignment 06</a>
+            </div>   
+
+            <div class="assignment">
+                <a href="https://github.com/Isuri15/POS-System?authuser=0">Git Assignment 7</a>
+                <a href="https://pos-system-9e722.web.app/?authuser=0">Assignment 07</a>
+            </div>   
+
+            <div class="assignment">
+                <a href="https://github.com/Isuri15/Simple-2D-Game?authuser=0">Git Assignment 8</a>
+                <a href="https://simple-2d-game-c0f3f.web.app/?authuser=0">Assignment 08</a>
+            </div>   
+
+            <div class="assignment">
+                <a href="https://github.com/Isuri15/Wonder-of-SriLanka-Website-IT?authuser=0">Git Assignment 9</a>
+                <a href="https://wonder-of-srilanka-website-it.web.app/?authuser=0">Assignment 09</a>
+            </div>   
+
+            <div class="assignment">
+                <a href="https://github.com/Isuri15/Bootstrap-Hotel-Website?authuser=0">Git Assignment 10</a>
+                <a href="https://hotel-website-81c49.web.app/?authuser=0">Assignment 10</a>
+            </div>   
+            
+        </div>
+
+
     </section>
 
+
+
+    <!-- Contact -->
     <section id="contact">
         <h2>Contact Me</h2>
         <div class="contact-container">
@@ -219,6 +344,7 @@
                 <h3>About</h3>
                 <p>Collaborative effort is more than just a project; it's the heart of teamwork and unity.</p>
             </div>
+            <div id="footer-lag">
             <div class="footer-section">
                 <h3>Links</h3>
                 <ul>
@@ -248,6 +374,8 @@
                 <p><i class="fas fa-contact"></i><a href="#" target="_blank">
                     <img src="/asset/icons/icons8-email-60.png" alt="email-icon" /></a>isurigamage13@gmail.com</p>
             </div>
+
+        </div>
         </div>
         <div>
             <p class="copyright">Copyright © All Rights Reserved.</p>

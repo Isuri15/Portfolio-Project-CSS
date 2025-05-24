@@ -29,11 +29,11 @@
     color: white;
     cursor: pointer;
     margin-top: 10px;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 .btn:hover {
-    background: slategray;
+    background: rgb(23, 97, 170);
 }
 
 @media (max-width: 320px) {

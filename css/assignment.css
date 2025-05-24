@@ -1,0 +1,48 @@
+/* Assignment section styles */
+.assignment-acontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: black;
+}
+
+.assignment {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.assignment:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.assignment a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.assignment a:hover {
+    background-color: #0056b3;
+}
+
+/* Heading style */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+    color: white;
+}

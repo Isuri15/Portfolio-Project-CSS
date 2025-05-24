@@ -53,12 +53,44 @@
 .social-icons a:hover {
     color: #00bfff;
     transform: scale(1.3) translateY(-5px);
-    box-shadow: 0 0 20px #00bfff;
-    background-color: #0897c7;
+    /* box-shadow: 0 0 25px #00bfff; */
+    /* background-color: #0897c7; */
     border: #00bfff;
     /* align-items: center;
     justify-content: center; */
 }
+
+  .typewriter {
+    font-family: monospace;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid ;
+    width: 25ch;
+    animation: typing 4s steps(25), blink .5s step-end infinite, erase 4s steps(25) 4s infinite;
+  }
+
+  @keyframes typing {
+    from { 
+        width: 25ch 
+    }to{ 
+        width: 0 
+    }
+    from {
+        width: 0 
+    }to { 
+        width: 25ch }
+  }
+
+  @keyframes erase {
+    from { 
+        width: 0 
+    }to { 
+        width: 25ch 
+    }
+
+  }
+
 
 @media (max-width: 320px) {
     .hero {
@@ -91,6 +123,7 @@
     .hero-text {
         margin: 30px 0;
         max-width: 100%;
+        
     }
 
     .hero-image img {

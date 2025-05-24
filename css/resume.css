@@ -1,6 +1,8 @@
 .resume-container {
     display: flex;
     justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     margin-top: 20px;
 }
@@ -64,12 +66,12 @@
 
 @media (max-width: 1024px) {
     .resume-box {
-        width: 45%;
+        width: 100%;
     }
 }
 
 @media (max-width: 1440px) {
     .resume-box {
-        width: 30%;
+        width: 100%;
     }
 }

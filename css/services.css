@@ -12,7 +12,11 @@
     box-shadow: 0 0 10px #00bfff;
 
 }
-
+.service-box:hover{
+    transform: scale(1.1) translateY(-5px);
+    transition: 0.3s ease-in-out;
+    
+}
 .service-box h3 {
     font-size: 18px;
     margin-bottom: 10px;
@@ -98,6 +102,6 @@
 
 @media (max-width: 1440px) {
     .service-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }

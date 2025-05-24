@@ -31,6 +31,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex; 
+    color: chartreuse;
    
 }
 
@@ -49,6 +50,11 @@ body {
 
 .nav-links a:hover {
     color:deepskyblue;
+}
+
+.menu-panel .nav-links a{
+    text-decoration: none;
+    font-size: 18px;
 }
 
 footer {
@@ -70,6 +76,7 @@ footer {
 
 .footer-section h3 {
     font-size: 16px;
+    font-family:serif;
     margin-bottom: 10px;
     color: deepskyblue;
 }
@@ -91,6 +98,10 @@ footer {
     text-decoration: underline;
 }
 
+#footer-lag{
+    display: flex;
+    justify-content: space-evenly;
+}
 .copyright {
     text-align: center;
     margin-top:20px;
@@ -112,33 +123,86 @@ footer {
     color: white;
 }
 
-.burger {
-    display: none;
+#burger {
+    display:none;
     cursor: pointer;
     flex-direction: column;
     gap: 5px;
+    font-size: 0.8rem;
 }
 
-.burger div {
+#burger div {
     width: 30px;
     height: 3px;
     background: white;
 }
 
 .close-btn {
+    background: none;
+    border: none;
     background-color: transparent;
-    color: white;
+    color: black;
     font-size: 2rem;
     cursor: pointer;
     position: absolute;
-    top: 10px;
+    top: 50px;
     right: 20px;
+    top: 1rem;
+    right: 1rem;
 }
 
-#menu-toggle {
+.menu-panel {
     display: none;
-}
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    padding: 2rem 1rem;
+  }
+  
+  .menu-panel.active {
+    display: block;
+  }
+  
+  .close-btn {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  
+  .menu-panel .nav-links {
+    list-style: none;
+    margin-top: 3rem;
+    padding: 0;
+  }
+  
+  .menu-panel .nav-links a {
+    color: #2633ee;
+    display: block;
+    padding: 1rem;
+  }
+  
+  .menu-panel .nav-links li {
+    margin: 1rem 0;
+  }
+  
+  /* .menu-panel .nav-links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+  } */
 
+  #menu-toggl .menu-panel {
+    display: block;
+  }
+  
 .about-info .btn{
     background-color:deepskyblue;
     border: 1px solid #00bfff;
@@ -178,7 +242,7 @@ footer {
         margin-bottom: 10px;
     }
 
-    .burger {
+    #burger {
         display: flex;
     }
 }
@@ -207,7 +271,7 @@ footer {
         margin-bottom: 15px;
     }
 
-    .burger {
+    #burger {
         display: flex;
     }
 }
@@ -236,13 +300,13 @@ footer {
         margin-bottom: 20px;
     }
 
-    .burger {
+    #burger {
         display: flex;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .burger {
+    #burger {
         display: flex;
     }
 
